@@ -1,0 +1,172 @@
+@charset "ISO-8859-1";
+/* style.css */
+
+/* General body style */
+/* style.css */
+
+/* General body style */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(135deg, #74ebd5, #ACB6E5);
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+/* Centered container for all pages */
+.container {
+    background: #ffffffdd;
+    padding: 30px 40px;
+    border-radius: 15px;
+    box-shadow: 0 8px 25px rgba(0,0,0,0.2);
+    text-align: center;
+    width: 90%;
+    max-width: 600px;
+    animation: fadeIn 1s ease-in-out;
+}
+
+/* Animation */
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(-20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+/* Headings */
+h1, h2, h3 {
+    color: #222;
+    margin-bottom: 20px;
+}
+
+/* Buttons */
+.btn {
+    background: linear-gradient(135deg, #43cea2, #185a9d);
+    color: white;
+    padding: 12px 25px;
+    margin: 10px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: all 0.3s ease;
+}
+
+.btn:hover {
+    background: linear-gradient(135deg, #185a9d, #43cea2);
+    transform: scale(1.08);
+}
+
+/* Links */
+a {
+    color: #185a9d;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+a:hover {
+    color: #43cea2;
+    text-decoration: underline;
+}
+
+/* Forms */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    text-align: left;
+}
+
+form table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+form td {
+    padding: 10px;
+}
+
+input[type="text"], input[type="email"], input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 14px;
+    transition: 0.3s;
+}
+
+input:focus {
+    border-color: #185a9d;
+    box-shadow: 0 0 6px #43cea2;
+    outline: none;
+}
+
+/* Tables */
+table {
+    border-collapse: collapse;
+    width: 100%;
+    margin-top: 20px;
+    background: #fff;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 6px 20px rgba(0,0,0,0.15);
+}
+
+th, td {
+    padding: 14px;
+    text-align: left;
+}
+
+th {
+    background: linear-gradient(135deg, #43cea2, #185a9d);
+    color: white;
+    font-size: 16px;
+    text-align: center;
+}
+
+td {
+    border-bottom: 1px solid #eee;
+}
+
+tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+/* Enroll button inside table */
+input[type="submit"] {
+    background: #43cea2;
+    color: white;
+    padding: 8px 16px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+input[type="submit"]:hover {
+    background: #185a9d;
+    transform: scale(1.05);
+}
+
+/* Dashboard links */
+.dashboard-links {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.dashboard-links a {
+    padding: 10px 20px;
+    background: linear-gradient(135deg, #43cea2, #185a9d);
+    color: white;
+    border-radius: 8px;
+    transition: 0.3s;
+}
+
+.dashboard-links a:hover {
+    background: linear-gradient(135deg, #185a9d, #43cea2);
+    transform: scale(1.05);
+}
